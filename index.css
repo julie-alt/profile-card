@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, "sans-serif";
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/background2.png');
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+.profile-card {
+  width: 600px;
+  height: 700px;
+  aspect-ratio: 3 / 2;
+  background: #b3afae96;
+  margin: 20px;
+  padding: 20px;
+  width: 400px;
+  height: auto;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s;
+}
+
+.profile-picture {
+  width: 320px;
+  margin: 30px;
+  cursor: pointer;
+  border-radius: 50px;
+  border: 3px solid #d9d5d4;
+  position: relative;
+  z-index: 100;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.info {
+  padding: 10px 50px;
+}
+
+.info h2 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.job-title {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.bio {
+  color: #555;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.social-icon {
+  width: px;
+  height: 100px;
+  margin: 0 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+
+}
+
+.email-link:hover {
+  transform: scale(1.2);
+}
+
+.utc-time {
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+  margin-top: 10px;
+}
+
+button {
+  background: #1f1e23;
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #333136;
+}
+
+@media (max-width: 767px) {
+
+  .profile-card {
+    max-width: 500px;
+    aspect-ratio: 1 / 1;
+  }
+
+  .profile-picture {
+    width: 200px;
+  }
+}

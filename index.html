@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="profile-card hide-details">
+    <img src="/profile-pic.png" alt="profile picture" data-testid="profile-picture" class="profile-picture">
+    <div class="info">
+      <h1 data-testid="fullName">Juliet Nwosu</h1>
+      <h2 class="job-title" data-testid="jobTitle">Frontend Developer</h2>
+      <p class="bio" data-testid="shortBio">Tech enthusiast, problem-solver, and lifelong learner. I specialize in
+        crafting beautiful and responsive websites that not only look great but work flawlessly. I believe in continuous
+        learning and staying updated with the latest trends in web development. When I’m not coding, you’ll find me
+        reading, listening to music, or brainstorming my next big project.</p>
+      <p data-testid="currentLocation">Location: Nigeria</p>
+
+      <a href="https://github.com/julie-alt" target="_blank" class="social-icon" data-testid="socialLinks">
+        <img src="/github.png" alt="github-logo">
+      </a>
+      <a href="mailto:julietnwosu2000@gmail.com?subject=Hello&body=I would like to connect with you!" class="email-link"
+        data-testid="emailAddress">
+        <img src="/gmail.png" alt="gmail-logo">
+      </a>
+      <p class="utc-time" data-testid="currentTimeUTC">UTC Time: <span id="utc-time"></span></p>
+      <div>
+        <button id="theme-btn">Change Theme</button>
+      </div>
+
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
