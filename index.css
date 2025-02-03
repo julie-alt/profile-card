@@ -16,13 +16,11 @@ body {
 
 .profile-card {
   width: 600px;
-  height: 700px;
+  height: auto;
   aspect-ratio: 3 / 2;
   background: #b3afae96;
   margin: 20px;
   padding: 20px;
-  width: 400px;
-  height: auto;
   text-align: center;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
